@@ -2,7 +2,6 @@ package main
 
 import (
 	"exampleMask/mask"
-	"exampleMask/search"
 	"fmt"
 )
 
@@ -14,6 +13,6 @@ func main() {
 	fmt.Println(page)
 	p := []byte(page)
 	k := []byte(key)
-	n := search.Search(p, k)
+	n := mask.Search(p, k)
 	fmt.Println(mask.Mask(n, p, s, m))
 }
